@@ -4,7 +4,7 @@
 The problem explored in this project is to discover which of several features increase the likelihood of stroke.
 ### Data:
 The data used for this project originates from:
-[https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
+(https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
 The data items include several features including: body mass index, age, marital status, average glucose level, smoking status, work type, gender, and the presence or heart disease or hypertension.
 ## Methods
