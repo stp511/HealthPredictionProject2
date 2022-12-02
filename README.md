@@ -15,16 +15,33 @@ This first image showcases correlations between numeric variables.
 
 These next two images showcase distributions of stroke across the presence of hypertension and heart disease:
 
-![image](https://user-images.githubusercontent.com/113748627/204377730-e30b0dc0-06af-4584-986a-82e5c06f83a7.png)
+![image](https://user-images.githubusercontent.com/113748627/205337774-0c17c919-ffde-4dfc-9b73-31073928237a.png)
+## Here we see that a higher incidence of stroke exists for those with hypertension.
 
-![image](https://user-images.githubusercontent.com/113748627/204377626-3d838a2c-05a8-4d67-80a7-309d13f38286.png)
+![image](https://user-images.githubusercontent.com/113748627/205337854-12d3a142-52d3-4ec2-bbff-6f5a4502df0e.png)
+## Here we see that a higher incidence of stroke exists for those with heart disease.
 
 ## Model
-The model chosen is a ***** with the hyperparameter *** tuned to ***.
-The metrics for evaluation of our optimized ***** Model of *** on our test data are: ****
+The model chosen is LightGBM with these hyperparameters:
+
+Class Weight: 'balanced'
+max_depth: 1
+n_estimators: 2
+num_leaves: 50
+pca_n_components: 0.5
+
+The metrics for evaluation of our optimized LightGBM Model on our test data are: 
+
+Recall: 0.85
+Accuracy: 0.68
+Precision: 0.11
+F1-score: 0.19
+
 ## Recommendations
-The ** score of our model is ***, explaining *** percent of the variability in our target data.
+
+The recall score of our model is 0.85.  This explains that our model is predicting 85% of the individuals who have stroke correctly.  This high recall score is reducing the incidence of unidentifying those individuals with stroke.  A lower recall score would lead to more incidence of informing individuals at risk of stroke that they are not and missing the opportunity to provide them with measures to prevent stroke such as medicine, exercise, or other treatments.
 ## Limitations & Next Steps
-This ** score of 0*** is ***, but was the highest of the models explored.  Additional data should be gathered on additional feautures that may provide more accurate predictions.
-### For further information
+This recall score of 0.85 was not the highest recall score of all models explored, but it's accuracy measure was higher than other comparable models.  This secondary measure of the accuracy of the model measured predicting correctly those with and without stroke.  
+
+## For more information:
 For any additional questions, please contact me above.
